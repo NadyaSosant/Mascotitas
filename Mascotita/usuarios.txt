@@ -1,0 +1,2 @@
+Ana,Gomez,Lopez,Fri Apr 02 00:00:00 CST 1999,ANA1234567890,1234,Veterinario
+Luis,Martinez,Perez,Fri Apr 02 00:00:00 CST 1999,LUI1234567890,5678,Asistente
