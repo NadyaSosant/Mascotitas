@@ -41,18 +41,19 @@ public abstract class Persona{
 	public void setCurp(String curp) {
 		this.curp = curp;
 	}
-	public Persona(String nombre, String aPaterno, String aMaterno, String fechaNacimiento, String curp) {
-		super();
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-		this.nombre = nombre;
-		this.aPaterno = aPaterno;
-		this.aMaterno = aMaterno;
-		try {
-			this.fechaNacimiento =dateFormat.parse(fechaNacimiento);
+	public Persona(String nombre, String aPaterno, String aMaterno, String fechaNacimientostr, String curp) {
+		
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        try {
+			 this.fechaNacimiento = dateFormat.parse(fechaNacimientostr);
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		this.nombre = nombre;
+		this.aPaterno = aPaterno;
+		this.aMaterno = aMaterno;
 		this.curp = curp;
 	}
 	@Override

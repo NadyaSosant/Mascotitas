@@ -11,13 +11,8 @@ public class Gerente extends Persona{
 	public void setNumGerente(int numGerente) {
 		this.numGerente = numGerente;
 	}
-	public Gerente(String nombre, String aPaterno, String aMaterno, Date fechaNacimiento, String curp, int numGerente, Sucursal sucursal) {
+	public Gerente(String nombre, String aPaterno, String aMaterno, String fechaNacimiento, String curp, int numGerente, Sucursal sucursal) {
 		super(nombre,aPaterno,aMaterno,fechaNacimiento,curp);
-		this.numGerente = numGerente;
-		this.sucursal = sucursal;
-	}
-	public Gerente(String nombre, String aPaterno, Date fechaNacimiento, String curp, int numGerente, Sucursal sucursal) {
-		super(nombre,aPaterno,fechaNacimiento,curp);
 		this.numGerente = numGerente;
 		this.sucursal = sucursal;
 	}

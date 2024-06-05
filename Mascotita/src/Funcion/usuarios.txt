@@ -1,4 +1,12 @@
-Ana,Gomez,Lopez,Mon Jul 06 00:00:00 CDT 1998,ANA1234567890,1234,Veterinario
-Juan,Ramirez,Lopez,Sun Jul 05 00:00:00 CDT 1998,ANA1234554690,1256,Asistente
+Ana,Gomez,Lopez,null,ANA1234567890,1234,Veterinario
+Juan,Ramirez,Lopez,null,ANA1234554690,1256,Asistente
 Luis,Martinez,Perez,null,LUI1234567890,5678,Asistente
-Luis,Martinez,Perez,Tue May 09 00:00:00 CST 1995,LUI1234567890,5678,Asistente
+Luis,Martinez,Perez,null,LUI1234567890,5678,Asistente
+Luis,Martinez,Perez,null,LUI1234567890,5678,Asistente
+Luis,Martinez,Perez,null,LUI1234567890,5678,Asistente
+Luis,Martinez,Perez,null,LUI1234567890,5678,Asistente
+Luis,Martinez,Perez,null,LUI1234567890,5678,Asistente
+daniel,Portilla,Gonzalez,null,dgfveray54tg,5436,Asistente
+Luis,Martinez,Perez,null,LUI1234567890,5678,Asistente
+daniell,gonzalez,portilla,Mon Mar 03 00:00:00 CST 1997,gwe4tefgrg,24576,Asistente
+Luis,Martinez,Perez,null,LUI1234567890,5678,Asistente

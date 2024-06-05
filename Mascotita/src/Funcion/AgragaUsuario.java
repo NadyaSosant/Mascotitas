@@ -1,4 +1,5 @@
 package Funcion;
+import java.util.Scanner;
 import java.io.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -10,7 +11,7 @@ import modelo.Persona;
 public class AgragaUsuario {
     private static final String FILE_NAME = "./src/Funcion/usuarios.txt";
     private TreeMap<Integer, Persona> usuarios = new TreeMap<>();
-    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     public void leerUsuarios() throws IOException, ParseException {
         try (BufferedReader br = new BufferedReader(new FileReader(FILE_NAME))) {
             String line;
@@ -66,7 +67,31 @@ public class AgragaUsuario {
         try {
             manager.leerUsuarios();
             manager.imprimirUsuarios();
-
+            Scanner scanner = new Scanner(System.in);
+            int x=1;
+            
+            switch (x) {
+            	case 1:
+            		 System.out.println("Ingresa el nombre (first name): ");
+            		 String nombre = scanner.nextLine();
+            		 System.out.println("Ingresa el Apellido PAterno (first name): ");
+            		 String paterno = scanner.nextLine();
+            		 System.out.println("Ingresa el Apellido Materno en caso de que se tenga (first name): ");
+            		 String materno = scanner.nextLine();
+                     if (materno.isEmpty()) {
+                         materno = null;
+                     } 
+                     System.out.println("Ingrese la fecha de nacimiento (dd/MM/yyyy): ");
+                     String fechaNacimientoStr = scanner.nextLine();
+                     System.out.println("Ingrese el CURP: ");
+                     String curp = scanner.nextLine();
+                     System.out.println("Ingrese el número de cédula: ");
+                     int numeroCedula = scanner.nextInt();
+                     scanner.nextLine();
+            		 Asistente asistente = new Asistente(nombre,paterno,materno,fechaNacimientoStr,curp,numeroCedula);
+                     manager.agregarUsuario(asistente);
+            		
+            }
             // Agregar un nuevo Veterinario
             //Veterinario veterinario = new Veterinario("Ana", "Gomez", "Lopez", new Date(), "ANA1234567890", 1234);
             //manager.leerUsuarios();

@@ -12,7 +12,7 @@ import modelo.Tarejeta;
 class AgregaCliente {
     private static final String FILE_NAME = "usuarios.txt";
     private TreeMap<Integer, Cliente> usuarios = new TreeMap<>();
-    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
     public void leerUsuarios() throws IOException, ParseException {
         File file = new File(FILE_NAME);
@@ -92,7 +92,7 @@ class AgregaCliente {
             String aMaterno = scanner.nextLine();
             System.out.println("Ingrese fecha de nacimiento (yyyy-MM-dd):");
             String fechaNac = scanner.nextLine();
-            Date fechaNacimiento = manager.dateFormat.parse(fechaNac);
+            String fechaNacimiento = fechaNac;
             System.out.println("Ingrese CURP:");
             String curp = scanner.nextLine();
             System.out.println("Ingrese número de cliente:");
